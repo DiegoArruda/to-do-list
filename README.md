@@ -1,59 +1,60 @@
-# ToDoList
+# 💡 Desafio Angular 19: Lista de Tarefas (To-Do List) Simples
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.3.
+## 🧩 Objetivo
 
-## Development server
+Criar uma aplicação web de lista de tarefas onde o usuário possa:
 
-To start a local development server, run:
+- Adicionar tarefas
+- Visualizar tarefas
+- Marcar tarefas como concluídas
+- Remover tarefas
 
-```bash
-ng serve
-```
+---
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 🎯 Requisitos Funcionais
 
-## Code scaffolding
+### ✅ Adicionar Tarefa
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- O usuário deve poder digitar uma tarefa e adicioná-la à lista.
 
-```bash
-ng generate component component-name
-```
+### 📋 Listar Tarefas
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- Todas as tarefas adicionadas devem ser exibidas em uma lista.
 
-```bash
-ng generate --help
-```
+### ✔️ Marcar como Concluída
 
-## Building
+- O usuário deve poder marcar uma tarefa como concluída.
+- A tarefa concluída deve ser visualmente diferenciada (ex: riscada ou com cor diferente).
 
-To build the project run:
+### 🗑️ Remover Tarefa
 
-```bash
-ng build
-```
+- O usuário deve poder excluir uma tarefa da lista.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+## 🛠️ Requisitos Técnicos
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+- Criar ao menos **um componente principal** e **um componente para as tarefas individuais**.
+- Utilizar **property binding** e **event binding**.
+- Trabalhar com **eventos do Angular** (`(click)`, `(input)`, etc).
+- Armazenar a lista de tarefas em uma **estrutura de dados no componente** (não é necessário banco de dados ou backend).
+- Utilizar `*ngFor` para renderizar a lista.
+- Utilizar `ngClass` ou `ngStyle` para alterar o estilo das tarefas concluídas.
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
+## ✅ Extras (opcional)
 
-For end-to-end (e2e) testing, run:
+- Persistir a lista no `localStorage` do navegador.
+- Adicionar **validação** para não permitir tarefas vazias.
+- Permitir **editar uma tarefa existente**.
+- Adicionar uma **contagem de tarefas pendentes**.
 
-```bash
-ng e2e
-```
+---
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## 🧪 Critérios de Avaliação
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Funcionamento completo conforme os requisitos.
+- Estrutura e organização do código (**componentização**, **boas práticas**).
+- Clareza na interface do usuário.
+- Uso correto dos recursos básicos do Angular (**data binding**, **diretivas**, etc).
