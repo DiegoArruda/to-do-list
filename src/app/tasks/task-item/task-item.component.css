@@ -1,0 +1,25 @@
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: purple;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.task-item button {
+  background: purple;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 8px;
+}
+
+.task-item.concluida {
+  background: green;
+  color: red;
+}
+
+.task-item.concluida h1 {
+  text-decoration: line-through;
+}

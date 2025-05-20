@@ -1,0 +1,22 @@
+<div class="tasks-container">
+  <h2>Lista de Tarefas</h2>
+
+  <input
+    type="text"
+    placeholder="Nova tarefa"
+    [(ngModel)]="newTask"
+    (keyup.enter)="addTask()"
+  />
+  <button (click)="addTask()">Adicionar</button>
+
+  <div class="task-list">
+    <app-task-item
+      *ngFor="let task of tasks; index as i"
+      [task]="task"
+      [index]="i"
+      (complete)="toggleComplete($event)"
+      (remove)="removeTask($event)"
+    >
+    </app-task-item>
+  </div>
+</div>

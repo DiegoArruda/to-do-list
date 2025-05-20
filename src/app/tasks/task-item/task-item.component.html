@@ -1,0 +1,7 @@
+<div class="task-item" [ngClass]="{ concluida: task.concluida }">
+  <button class="material-icons" (click)="onComplete()">check</button>
+  <h1>{{task.texto}}</h1>
+  <button class="material-icons" (click)="onRemove()">delete</button>
+
+</div>
+
