@@ -7,16 +7,19 @@
     [(ngModel)]="newTask"
     (keyup.enter)="addTask()"
   />
+
   <button (click)="addTask()">Adicionar</button>
 
   <div class="task-list">
+  @for(task of tasks; track $index){
     <app-task-item
-      *ngFor="let task of tasks; index as i"
       [task]="task"
-      [index]="i"
+      [index]="$index"
       (complete)="toggleComplete($event)"
       (remove)="removeTask($event)"
     >
     </app-task-item>
+  }
   </div>
+
 </div>
